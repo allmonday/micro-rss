@@ -1,0 +1,4 @@
+microRss
+========
+
+self rss collector 
