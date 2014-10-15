@@ -1,10 +1,16 @@
+print('start')
 import feedparser as fp
 import yaml
 import json
+import os,sys
 
-bloglist = "./blogs.yml"
+currentDir = os.path.dirname(__file__) 
+bloglist = currentDir + "/blogs.yml"
+print(bloglist)
+print(sys.version)
 
 blogs = yaml.load(open(bloglist))
+print('start work')
 blogs = blogs['blogs']
 
 
@@ -24,4 +30,5 @@ all_blogs = []
 for b in blogs:
     all_blogs.extend(getRss(b['link']))
 
-open('rss.json', 'w').write(json.dumps(all_blogs))
+open(currentDir + '/rss.json', 'w').write(json.dumps(all_blogs))
+print('finished')

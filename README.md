@@ -1,7 +1,7 @@
 microRss
 ========
 
-self rss collector 
+self rss collector
 
 example: [tangkikodo.sinaapp.com](http://tangkikodo.sinaapp.com)
 
@@ -13,7 +13,8 @@ locl server is ok with wirte premission, however SAE forbide write to rss.json -
 ## TODO
 0. auto fresh
 0. keep the history data
-0. add view to edit rss list 
+0. add view to edit rss list
+0. show selector aside the articles
 
 ## usage:
 
